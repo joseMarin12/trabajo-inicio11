@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    background-image: url(https://i.pinimg.com/originals/53/5c/11/535c1175873becf667d4b630dcf6b343.gif);
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #1f1f1f, #333);
+    padding: 20px;
+    font-size: 1.9em;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.project {
+    background: #222;
+    max-width: 100%; 
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project h2 {
+    margin-top: 15px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.project p{
+    margin-top: 15px;
+    font-size: 1.5em;
+   
+}
+
+.project:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
